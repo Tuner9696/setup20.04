@@ -1,0 +1,5 @@
+grep -qxF 'alias tt="cd ~/temp"' ~/.bash_alias || echo 'alias tt="cd ~/temp"' >> ~/.bash_alias
+grep -qxF 'alias qq="shutdown -h now"' ~/.bash_alias || echo 'alias qq="shutdown -h now"' >> ~/.bash_alias
+grep -qxF 'source ~/.bash_alias' ~/.bashrc || echo 'source ~/.bash_alias' >> ~/.bashrc
+source ~/.bashrc
+
